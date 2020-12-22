@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap');
+
+body {
+    color: white;
+    font-family: 'Andika New Basic', sans-serif;
+} 
+label{
+    display: block;
+}
+.form-container {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: darkcyan;
+    margin-left: 50px;
+    margin-right: auto;
+    border-radius: 4px;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    min-height: 25px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.opinion {
+    height: 100px;
+}
+button {
+    padding: 10px 30px;
+    border-radius: 4px;
+    border-style: solid;
+    border-color: white;
+    background-color: darkcyan;
+    color: white;  
+}
+button:hover{
+    background-color: white;
+    color: darkcyan;
+}
+.centralizado {
+    text-align: center;
+}

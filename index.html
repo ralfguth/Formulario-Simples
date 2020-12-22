@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="styles/estilo.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <section class="form-container">
+        <header class="centralizado">
+            <h1 id="title">Formulário de Pesquisa</h1>
+            <p id="description">O que você acha do nosso conteúdo?</p>
+        </header>
+        <form action="" id="survey-form">
+            <label for="name" id="name-label">Nome</label>
+            <input class="form-control" type="text" id="name" name="nome" placeholder="Seu nome" required>
+            <label for="email" id="email-label">E-mail</label>
+            <input class="form-control" type="email" id="email" name="e-mail" placeholder="exemplo@email.com" required>
+            <label for="age" id="number-label">Idade</label>
+            <input class="form-control" type="number" name="idade" id="number" min="10" max="99"
+                placeholder="Sua idade">
+            <label for="dropdown">Ocupação</label>
+            <select name="ocupação" id="dropdown" class="form-control">
+                <option value="">--Escolha uma opção--</option>
+                <option value="estudante">Estudante</option>
+                <option value="trabalhador_em_tempo_integral">Trabalhador em tempo integral</option>
+                <option value="trabalhador_em_meio_período">Trabalhador em meio período</option>
+                <option value="desempregado">Desempregado</option>
+            </select>
+            <div class="form-control">
+                <label>Você recomendaria nosso site para um amigo?</label>
+                <input type="radio" name="recomend" id="recomend-sim" value="Sim">Sim
+                <input type="radio" name="recomend" id="recomend-no" value="Não">Não
+            </div>
+            <div class="form-control">
+                <label id="Assuntos">Quais assuntos mais te interessam?</label>
+                <input type="checkbox" name="Front-End" id="check-front" value="Front-End">Front-End
+                <input type="checkbox" name="Back-End" id="check-end" value="Back-End">Back-End
+                <input type="checkbox" name="Data-Visualization" id="check-data" value="Data-Vis">Data Visualization
+            </div>
+            <div class="form-control">
+                <label for="aditional-comments">Deixe-nos sua opinião</label>
+                <textarea class="form-control opinion" name="Opiniao" id="aditional-comments" cols="30"
+                    rows="10"></textarea>
+            </div>
+            <footer class="centralizado">
+            <button id="submit">Enviar</button>
+        </footer>
+        </form>
+    </section>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
